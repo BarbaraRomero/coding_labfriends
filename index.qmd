@@ -1,0 +1,42 @@
+---
+title: "Coding Provenance. Lab & Friends"
+subtitle: "by the Provenance Lab"
+author: "Bárbara Romero Ferrón"
+date: "2025-09-24"
+format:
+  html:
+    toc: true
+---
+
+# Welcome
+Welcome to our workshop **Coding Provenance for Lab & Friends**!  
+Think of this as a crash course with a twist: we’ll dive into coding, data cleaning, analysis, and visualization in a fun, hands-on way. By the end of the session, you’ll have shaken off the fear of coding and feel empowered to tackle these tasks on your own with confidence!
+
+## Date & Time
+- **Date**: September 24, 2025  
+- **Time**: 11:00–13:00 — lunch break — 14:00–18:00  
+- **Location**: Leuphana University Room: C.40.108 
+
+## Content
+- Knowledge Design 
+- Learning the Language
+- Data Preprocessing 
+- From Text to Data
+- Exploratory Analysis
+- Let's visualise things!
+
+## Preparation
+This workshop requires only very basic tech skills to the extend of having using a computer before.
+You won’t need to install any software, since everything will run in the cloud.  
+The idea behind this workshop is simple: you don’t need fancy setups or extraordinary tools to start doing fun coding things! 
+
+::: {.callout-note}
+## Checklist  
+- [ ] Bring your own laptop  
+- [ ] Have a Google account ready  
+- [ ] Use **ChatGPT** (free version)  
+  - If you don’t already have an account, you can sign up using [Proton Mail](https://proton.me/mail), a free, privacy-friendly email service.  
+:::
+
+## Contact
+- Email: barbara.romero_ferron(at)leuphana.de

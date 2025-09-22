@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "Coding Provenance. Lab & Friends"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Knowledge Design"
+        href: knowledge.qmd
+      - text: "Learning the Language"
+        href: language.qmd
+      - text: "Data Preprocessing"
+        href: preprocessing.qmd
+      - text: "From Text to Data"
+        href: text2data.qmd
+      - text: "Exploratory Analysis"
+        href: exploration.qmd
+      - text: "Visualise it!"
+        href: visualisation.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: assets/pink.css
+    toc: true
+
+
+
