@@ -5,11 +5,15 @@ format:
     toc: true
 ---
 
-# What is it?
+- Elements to Take into Consideration
+- Structuring
+- Cleaning
+- Normalising
 
 ## Materials
 
 ### Data
+[**Messy Dataset**](https://drive.google.com/file/d/10HwI1A7L0W4hsGba3DwEVrE1j-HWwRcl/view?usp=sharing)
 
 ### Presentation
 
