@@ -4,11 +4,50 @@ format:
   html:
     toc: true
 ---
+ - From Text to Tabular Data
+ - Natural Language Processing (NLP)
+ - Large Language Models (LLM)
 
 ## Materials
 
 ### Data
 
+**The Eternal Feminine (L'Éternel Féminin), Paul Cezanne, c.1877**
+
+::: {.columns style="gap: 1.8rem; align-items: flex-start;"}
+::: {.column width="38%"}
+![Getty Museum](images/cezanne.jpg){width=100% style="max-width:420px; border-radius:8px; margin-right:0.8rem; font-size:0.55rem;"}
+:::
+
+::: {.column width="52%" style="font-size:0.75rem; line-height:1.5;"}
+**Provenance**
+
+Ambroise Vollard, French, 1867–1939; Auguste Pellerin, 1852–1929 (Paris, France), by inheritance to Jean-Victor Pellerin, 1929. Jean-Victor Pellerin (Paris, France), sold to Wildenstein & Co., 1955. Wildenstein & Co. (New York), sold to Stavros S. Niarchos, 1956. Stavros S. Niarchos, 1908–1996 (Paris, France), sold to Wildenstein & Co., 1958. Wildenstein & Co. (New York), sold to Harold Hecht, 1959. Harold Hecht, American, 1907–1985 (Beverly Hills, California), sold to Wildenstein & Co., 1962. Wildenstein & Co. (New York), sold to Mrs. John Goulandris, 1973. Mrs. John Goulandris (New York, New York). Galerie Beyeler, founded 1952, dissolved 2011 (Basel, Switzerland), sold to the J. Paul Getty Museum, 1987.
+:::
+:::
+
+
 ### Presentation
 
-### Bibliography
+You can follow the presentation here. 
+
+<div class="text-center" style="margin: 1rem 0;">
+  <a href="https://docs.google.com/presentation/d/14TlfZPxFauWw0OQN2CPaOaolPz1EkfqD_EgUV4abtYk/edit?usp=sharing"
+     class="btn btn-sm px-3 py-2 shadow"
+     style="background:#ff4fa3; border:none; color:white; border-radius:9999px; font-weight:600;"
+     target="_blank" rel="noopener">
+    Presentation
+  </a>
+</div>
+
+### Bibliography & Resources
+
+Illustrated Guide to Transformer. A component by component breakdown analysis.(2020) https://jinglescode.github.io/2020/05/27/illustrated-guide-transformer/
+
+The Illustrated Word2vec. https://jalammar.github.io/illustrated-word2vec/ 
+
+Text Analysis for Humanities Research (with a focus on Archaeology) https://github.com/alexbrandsen/Text-Analysis-for-Humanities-research?tab=readme-ov-file 
+
+Voyant Tool https://voyant-tools.org/
+
+iAnalyzer https://ianalyzer.hum.uu.nl/home 

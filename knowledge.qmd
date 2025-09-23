@@ -12,49 +12,46 @@ format:
 
 ### Data
 For the first activity, review these different archival sources and imagine that you need to design a data model for a tabular database (a spreadsheet). What variables/columns would you include?    
-    - https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=FL4156816 
-    - https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_paul_gauguin_volume_i_wildenstein_institute/page/52-53 
-    - https://www.royalacademy.org.uk/art-artists/exhibition-catalogue/1920-21-exhibition-of-spanish-painting
-    - https://libguides.getty.edu/Stendahl/Letter_3 
+    
+- [Stock book Sample](https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=FL4156816)
+- [Catalogue Raisonné Sample](https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_paul_gauguin_volume_i_wildenstein_institute/page/52-53)
+- [Exhibition Catalogue Sample](https://www.royalacademy.org.uk/art-artists/exhibition-catalogue/1920-21-exhibition-of-spanish-painting)
+- [Correspondence Sample](https://libguides.getty.edu/Stendahl/Letter_3) 
 
 ### Presentation
 
-### Bibliography
-@book{DignazioKlein2023,
-  author    = {Catherine D'Ignazio and Lauren F. Klein},
-  title     = {Data Feminism},
-  year      = {2023},
-  publisher = {MIT Press},
-  url       = {https://data-feminism.mitpress.mit.edu/}
-}
+You can follow the presentation here. 
 
-@misc{CARE,
-  title   = {CARE Principles for Indigenous Data Governance},
-  author  = {{Global Indigenous Data Alliance}},
-  year    = {2019},
-  url     = {https://www.gida-global.org/care},
-  note    = {Accessed: {{\today}}}
-}
+<div class="text-center" style="margin: 1rem 0;">
+  <a href="https://docs.google.com/presentation/d/1eY0kCpfx-s0hN4a4cAf7kYr8ZzItwEVkXokBc5T0pAE/edit?usp=sharing"
+     class="btn btn-sm px-3 py-2 shadow"
+     style="background:#ff4fa3; border:none; color:white; border-radius:9999px; font-weight:600;"
+     target="_blank" rel="noopener">
+    Presentation
+  </a>
+</div>
 
-@article{Ricaurte2019,
-  author  = {P. Ricaurte},
-  title   = {Data Epistemologies, The Coloniality of Power, and Resistance},
-  journal = {Television \& New Media},
-  year    = {2019},
-  volume  = {20},
-  number  = {4},
-  pages   = {350--365},
-  doi     = {10.1177/1527476419831640}
-}
+### Bibliography & Resources
+Data Feminism — Catherine D’Ignazio & Lauren F. Klein (2023). MIT Press.
+https://data-feminism.mitpress.mit.edu/
 
-@online{LinkedArt,
-  title = {Linked Art},
-  year  = {n.d.},
-  url   = {https://linked.art/}
-}
+CARE Principles for Indigenous Data Governance — Global Indigenous Data Alliance (2019).
+https://www.gida-global.org/care
+ — Principios CARE para pueblos indígenas.
 
-@online{CIDOCCRM,
-  title = {CIDOC-CRM, Version 7.3},
-  year  = {n.d.},
-  url   = {https://cidoc-crm.org/Version/version-7.3}
-}
+Data Epistemologies, the Coloniality of Power, and Resistance — P. Ricaurte (2019). Television & New Media, 20(4), 350–365.
+https://doi.org/10.1177/1527476419831640
+
+Linked Art — Linked Art Community (s. f.).
+https://linked.art/
+ — Modelo de datos e interoperabilidad para arte.
+
+CIDOC-CRM, Version 7.3 — CIDOC CRM Special Interest Group (s. f.).
+https://cidoc-crm.org/Version/version-7.3
+
+The FAIR Guiding Principles for scientific data management and stewardship — Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, et al. (2016). Scientific Data, 3, 160018.
+https://doi.org/10.1038/sdata.2016.18
+
+W3C PROV: Provenance Documentation — W3C (s. f.).
+https://www.w3.org/TR/prov-overview/
+ — Modelo de procedencia (PROV).

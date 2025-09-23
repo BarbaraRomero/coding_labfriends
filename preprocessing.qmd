@@ -13,8 +13,34 @@ format:
 ## Materials
 
 ### Data
+
+Download the dataset and lets check how we would pre-process it. 
 [**Messy Dataset**](https://drive.google.com/file/d/10HwI1A7L0W4hsGba3DwEVrE1j-HWwRcl/view?usp=sharing)
 
 ### Presentation
 
+You can follow the presentation here. 
+
+<div class="text-center" style="margin: 1rem 0;">
+  <a href="https://docs.google.com/presentation/d/1VDSoIz-RNb_KbbwiHo9LNPYOA4I-bdSzjsbSXdWCGnA/edit?usp=sharing"
+     class="btn btn-sm px-3 py-2 shadow"
+     style="background:#ff4fa3; border:none; color:white; border-radius:9999px; font-weight:600;"
+     target="_blank" rel="noopener">
+    Presentation
+  </a>
+</div>
+
 ### Bibliography
+
+Mariani, F., Koss, M., & Rother, L. (2024). People Information in Provenance Data: Biographical Entity Linking with Wikidata and ULAN. Život Umjetnosti : Časopis o Modernoj i Suvremenoj Umjetnosti i Arhitekturi, 114(1), 148–161. https://doi.org/10.31664/zu.2024.114.07 
+
+
+Creating a data cleaning workflow https://cghlewis.com/blog/data_clean_02/
+
+Getty Vocabularies (AAT, ULAN, TGN) — Getty Research Institute. https://www.getty.edu/research/tools/vocabularies/
+
+Wikidata: a free and open knowledge base — Wikidata Community. https://www.wikidata.org/
+
+The Virtual International Authority File. https://viaf.org/en 
+
+

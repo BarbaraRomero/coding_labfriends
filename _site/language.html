@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
-  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliography</a></li>
+  <li><a href="#bibliography-resources" id="toc-bibliography-resources" class="nav-link" data-scroll-target="#bibliography-resources">Bibliography &amp; Resources</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -160,16 +160,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<ul>
+<li>Learning the Language: Python</li>
+<li>Coding Using Generative AI</li>
+<li>First Coding Steps</li>
+</ul>
 <section id="materials" class="level2">
 <h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<ul>
+<li><p><a href="https://colab.research.google.com/">Google Colab</a></p></li>
+<li><p><a href="https://chatgpt.com/">ChatGPT</a></p></li>
+</ul>
 <section id="data" class="level3">
 <h3 class="anchored" data-anchor-id="data">Data</h3>
+<ul>
+<li><a href="https://drive.google.com/file/d/15J6mRYUdc7Oo_0rnUnosiGRVjELgZf4o/view?usp=drive_link">Knoedler Processed Data</a></li>
+</ul>
+<p>If you are intersted, check the full data set and documenation <a href="https://github.com/thegetty/provenance-index-csv/tree/main/knoedler">here</a>.</p>
 </section>
 <section id="presentation" class="level3">
 <h3 class="anchored" data-anchor-id="presentation">Presentation</h3>
+<p>You can follow the presentation here.</p>
+<div class="text-center" style="margin: 1rem 0;">
+<p><a href="https://docs.google.com/presentation/d/1sUiDNVwkO7LVbXhV9QsPdRZFd9StcYXIJqhjM4Rroiw/edit?usp=sharing" class="btn btn-sm px-3 py-2 shadow" style="background:#ff4fa3; border:none; color:white; border-radius:9999px; font-weight:600;" target="_blank" rel="noopener"> Presentation </a></p>
+</div>
 </section>
-<section id="bibliography" class="level3">
-<h3 class="anchored" data-anchor-id="bibliography">Bibliography</h3>
+<section id="bibliography-resources" class="level3">
+<h3 class="anchored" data-anchor-id="bibliography-resources">Bibliography &amp; Resources</h3>
+<p>Karsdorp, F., Kestemont, M., &amp; Riddell, A. (2021). Humanities Data Analysis: Case Studies with Python. Princeton University Press. https://www.humanitiesdataanalysis.org/ https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html</p>
+<p>Karsdorp, F. Python Programming for the humanities https://www.karsdorp.io/python-course/</p>
+<p>Walsh, Melanie (2021). Intro to Cultural Analytics. https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html</p>
+<p>Programming Historian https://programminghistorian.org/</p>
+<p>Poirier, Lindsay (2020) Ethnographies of Datasets: Teaching Critical Data Analysis through R NotebooksURL. https://shorturl.at/lAUgn</p>
 
 
 </section>
@@ -248,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/BarbaraRomero\.github\.io\/coding_labfriends\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

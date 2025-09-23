@@ -4,13 +4,12 @@ format:
   html:
     toc: true
 ---
-
 - Basic Statistical Analysis
-- Introduction to Visualisations
-- Bonus: Network Analysis
+- Introduction to Information Visualisation
+- Bonus: Network Analysis :D
 
 ## Materials
-For this session we will need three datasets (two jsons and one csv). For the second part of this session we also need to download and install [gephi](https://gephi.org/).
+For this session we will need four datasets (two json and two csv). For the second part of this session we also need to download and install [gephi](https://gephi.org/).
 
 ### Data
 
@@ -70,11 +69,38 @@ Contains information about artworks and their provenance events (e.g., creation,
 | **relations**       | List of relationships to other parties: includes relation `id`, related party `id`, and relation type (ULAN relation vocab). | `{"party": "iXw1994820523", "type": "gvp:ulan1541_spouse_of__spouse of"}`      |
 :::
 
+**Royal families dataset**
+    [Nodes](https://drive.google.com/file/d/1CpcCJTXQM2CjROxjmS77fRMBajvr0A3p/view?usp=sharing)
+    [Edges](https://drive.google.com/file/d/1mqzD2mYJ3k5qurQoAgOLYu5-3fdSBL9v/view?usp=sharing)
+
 ### Presentation
 
-### Bibliography + Resources
-<https://datavizproject.com/>
-http://networksciencebook.com/
-https://histecon.fas.harvard.edu/visualizing/ 
-https://cosmograph.app/
+You can follow the presentation here. 
 
+<div class="text-center" style="margin: 1rem 0;">
+  <a href="https://docs.google.com/presentation/d/1BQPXpKWvEm8YPhd3gHIdd_n8IFHzKUd4UTLjJDkWhU4/edit?usp=drive_link"
+     class="btn btn-sm px-3 py-2 shadow"
+     style="background:#ff4fa3; border:none; color:white; border-radius:9999px; font-weight:600;"
+     target="_blank" rel="noopener">
+    Presentation
+  </a>
+</div>
+
+
+### Bibliography + Resources
+
+Dataviz Project. https://datavizproject.com/
+
+Visualizing Historical Network https://histecon.fas.harvard.edu/visualizing/ 
+
+Cosmograph. https://cosmograph.app/
+
+Network Science. http://networksciencebook.com/
+
+Fraiberger, S. P., Sinatra, R., Resch, M., Riedl, C., & Barabási, A.-L. (2018). Quantifying Reputation and Success in Art. Science, 362(6416), 825–829. https://doi.org/10.1126/science.aau7224
+
+Huemer, C. (2019). The Provenance of Provenances. In Jane C. Milosch, Nick Pearce (eds.), Collecting & Provenance: A Multidisciplinary Approach. Rowman & Littlefield. https://www.academia.edu/43252971/The_Provenance_of_Provenances 
+
+Lincoln, M. D. (2020). Tangled Metaphors: Network Thinking and Network Analysis in the History of Art. In The Routledge Companion to Digital Humanities and Art History. Routledge.
+
+Schich, M., Huemer, C., Adamczyk, P., Manovich, L., & Liu, Y. Y. (2017). Network dimensions in the getty provenance index. arXiv preprint arXiv:1706.02804.

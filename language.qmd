@@ -4,11 +4,45 @@ format:
   html:
     toc: true
 ---
+ - Learning the Language: Python
+ - Coding Using Generative AI
+ - First Coding Steps
 
 ## Materials
 
+- [Google Colab](https://colab.research.google.com/)
+
+- [ChatGPT](https://chatgpt.com/)
+
 ### Data
+- [Knoedler Processed Data](https://drive.google.com/file/d/15J6mRYUdc7Oo_0rnUnosiGRVjELgZf4o/view?usp=drive_link)
+
+If you are intersted, check the full data set and documenation [here](https://github.com/thegetty/provenance-index-csv/tree/main/knoedler).
 
 ### Presentation
 
-### Bibliography
+You can follow the presentation here. 
+
+<div class="text-center" style="margin: 1rem 0;">
+  <a href="https://docs.google.com/presentation/d/1sUiDNVwkO7LVbXhV9QsPdRZFd9StcYXIJqhjM4Rroiw/edit?usp=sharing"
+     class="btn btn-sm px-3 py-2 shadow"
+     style="background:#ff4fa3; border:none; color:white; border-radius:9999px; font-weight:600;"
+     target="_blank" rel="noopener">
+    Presentation
+  </a>
+</div>
+
+### Bibliography & Resources
+
+Karsdorp, F., Kestemont, M., & Riddell, A. (2021). Humanities Data Analysis: Case Studies with Python. Princeton University Press. https://www.humanitiesdataanalysis.org/ 
+https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html
+
+Karsdorp, F. Python Programming for the humanities https://www.karsdorp.io/python-course/ 
+
+Walsh, Melanie (2021). Intro to Cultural Analytics. https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html
+
+Programming Historian https://programminghistorian.org/
+
+Poirier, Lindsay (2020) Ethnographies of Datasets: Teaching Critical Data Analysis through R NotebooksURL. https://shorturl.at/lAUgn 
+
+
