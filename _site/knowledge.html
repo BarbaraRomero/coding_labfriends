@@ -102,20 +102,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Learning the Language</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./preprocessing.html"> 
-<span class="menu-text">Data Preprocessing</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./text2data.html"> 
 <span class="menu-text">From Text to Data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./exploration.html"> 
-<span class="menu-text">Exploratory Analysis</span></a>
+    <a class="nav-link" href="./preprocessing.html"> 
+<span class="menu-text">Data Preprocessing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visualisation.html"> 
-<span class="menu-text">Visualise it!</span></a>
+    <a class="nav-link" href="./exploration.html"> 
+<span class="menu-text">Exploratory Analysis &amp; Visualisation</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -164,16 +160,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<ul>
+<li>Structure the Data – define formats and standards.</li>
+<li>Build Ontologies – establish meaning and relationships.</li>
+<li>Interrogate the Datasets – evaluate biases, gaps, and context.</li>
+</ul>
 <section id="materials" class="level2">
 <h2 class="anchored" data-anchor-id="materials">Materials</h2>
 <section id="data" class="level3">
 <h3 class="anchored" data-anchor-id="data">Data</h3>
+<p>For the first activity, review these different archival sources and imagine that you need to design a data model for a tabular database (a spreadsheet). What variables/columns would you include?<br>
+- https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=FL4156816 - https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_paul_gauguin_volume_i_wildenstein_institute/page/52-53 - https://www.royalacademy.org.uk/art-artists/exhibition-catalogue/1920-21-exhibition-of-spanish-painting - https://libguides.getty.edu/Stendahl/Letter_3</p>
 </section>
 <section id="presentation" class="level3">
 <h3 class="anchored" data-anchor-id="presentation">Presentation</h3>
 </section>
 <section id="bibliography" class="level3">
 <h3 class="anchored" data-anchor-id="bibliography">Bibliography</h3>
+<p><span class="citation" data-cites="book">@book</span>{DignazioKlein2023, author = {Catherine D’Ignazio and Lauren F. Klein}, title = {Data Feminism}, year = {2023}, publisher = {MIT Press}, url = {https://data-feminism.mitpress.mit.edu/} }</p>
+<p><span class="citation" data-cites="misc">@misc</span>{CARE, title = {CARE Principles for Indigenous Data Governance}, author = {{Global Indigenous Data Alliance}}, year = {2019}, url = {https://www.gida-global.org/care}, note = {Accessed: {{}}} }</p>
+<p><span class="citation" data-cites="article">@article</span>{Ricaurte2019, author = {P. Ricaurte}, title = {Data Epistemologies, The Coloniality of Power, and Resistance}, journal = {Television &amp; New Media}, year = {2019}, volume = {20}, number = {4}, pages = {350–365}, doi = {10.1177/1527476419831640} }</p>
+<p><span class="citation" data-cites="online">@online</span>{LinkedArt, title = {Linked Art}, year = {n.d.}, url = {https://linked.art/} }</p>
+<p><span class="citation" data-cites="online">@online</span>{CIDOCCRM, title = {CIDOC-CRM, Version 7.3}, year = {n.d.}, url = {https://cidoc-crm.org/Version/version-7.3} }</p>
 
 
 </section>
@@ -252,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/BarbaraRomero\.github\.io\/coding_labfriends\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

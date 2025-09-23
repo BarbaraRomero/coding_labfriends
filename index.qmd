@@ -20,10 +20,9 @@ Think of this as a crash course with a twist: we’ll dive into coding, data cle
 ## Content
 - Knowledge Design 
 - Learning the Language
-- Data Preprocessing 
 - From Text to Data
-- Exploratory Analysis
-- Let's visualise things!
+- Data Preprocessing 
+- Exploratory Analysis & Visualisation
 
 ## Preparation
 This workshop requires only very basic tech skills to the extend of having using a computer before.

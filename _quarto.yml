@@ -11,14 +11,12 @@ website:
         href: knowledge.qmd
       - text: "Learning the Language"
         href: language.qmd
-      - text: "Data Preprocessing"
-        href: preprocessing.qmd
       - text: "From Text to Data"
         href: text2data.qmd
-      - text: "Exploratory Analysis"
+      - text: "Data Preprocessing"
+        href: preprocessing.qmd
+      - text: "Exploratory Analysis & Visualisation"
         href: exploration.qmd
-      - text: "Visualise it!"
-        href: visualisation.qmd
 
 format:
   html:

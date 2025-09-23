@@ -4,11 +4,57 @@ format:
   html:
     toc: true
 ---
+ - Structure the Data – define formats and standards.
+ - Build Ontologies – establish meaning and relationships.
+ - Interrogate the Datasets – evaluate biases, gaps, and context.
 
 ## Materials
 
 ### Data
+For the first activity, review these different archival sources and imagine that you need to design a data model for a tabular database (a spreadsheet). What variables/columns would you include?    
+    - https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=FL4156816 
+    - https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_paul_gauguin_volume_i_wildenstein_institute/page/52-53 
+    - https://www.royalacademy.org.uk/art-artists/exhibition-catalogue/1920-21-exhibition-of-spanish-painting
+    - https://libguides.getty.edu/Stendahl/Letter_3 
 
 ### Presentation
 
 ### Bibliography
+@book{DignazioKlein2023,
+  author    = {Catherine D'Ignazio and Lauren F. Klein},
+  title     = {Data Feminism},
+  year      = {2023},
+  publisher = {MIT Press},
+  url       = {https://data-feminism.mitpress.mit.edu/}
+}
+
+@misc{CARE,
+  title   = {CARE Principles for Indigenous Data Governance},
+  author  = {{Global Indigenous Data Alliance}},
+  year    = {2019},
+  url     = {https://www.gida-global.org/care},
+  note    = {Accessed: {{\today}}}
+}
+
+@article{Ricaurte2019,
+  author  = {P. Ricaurte},
+  title   = {Data Epistemologies, The Coloniality of Power, and Resistance},
+  journal = {Television \& New Media},
+  year    = {2019},
+  volume  = {20},
+  number  = {4},
+  pages   = {350--365},
+  doi     = {10.1177/1527476419831640}
+}
+
+@online{LinkedArt,
+  title = {Linked Art},
+  year  = {n.d.},
+  url   = {https://linked.art/}
+}
+
+@online{CIDOCCRM,
+  title = {CIDOC-CRM, Version 7.3},
+  year  = {n.d.},
+  url   = {https://cidoc-crm.org/Version/version-7.3}
+}
