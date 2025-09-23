@@ -125,3 +125,46 @@ EOF
 .callout.callout-note li{
   margin: 0.25rem 0;
 }
+
+/* === Callout plegable (NOTE) con fondo rosa clarito === */
+.callout.callout-note{
+  background: #fdf9fb !important;          /* rosa muy suave para todo el bloque */
+  border-left: 4px solid #ff3ea5 !important;
+}
+
+.callout.callout-note .callout-header{
+  background: #f5e7ee !important;           /* un pelín más marcado para el encabezado */
+  border-bottom: 1px solid rgba(255,62,165,.20) !important;
+}
+
+.callout.callout-note .callout-title{
+  color: #ff3ea5 !important;
+}
+
+.callout.callout-note .callout-icon,
+.callout.callout-note .callout-icon i,
+.callout.callout-note .callout-icon svg{
+  color: #ff3ea5 !important;
+  fill: #ff3ea5 !important;
+}
+
+/* Enlaces dentro del callout */
+.callout.callout-note a{
+  color: #ff3ea5 !important;
+}
+.callout.callout-note a:hover,
+.callout.callout-note a:focus{
+  color: #e23592 !important;
+  text-decoration-color: #e23592 !important;
+}
+
+/* Checkboxes de la checklist en rosa */
+.callout.callout-note input[type="checkbox"]{
+  accent-color: #ff3ea5;
+}
+
+/* (Opcional) un ajuste suave en modo oscuro */
+@media (prefers-color-scheme: dark){
+  .callout.callout-note{ background: rgba(255,62,165,.10) !important; }
+  .callout.callout-note .callout-header{ background: rgba(255,62,165,.14) !important; }
+}

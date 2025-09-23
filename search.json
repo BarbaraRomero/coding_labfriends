@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Coding Provenance. Lab & Friends",
     "section": "",
-    "text": "Welcome to our workshop Coding Provenance for Lab & Friends!\nThink of this as a crash course with a twist: we’ll dive into coding, data cleaning, analysis, and visualization in a fun, hands-on way. By the end of the session, you’ll have shaken off the fear of coding and feel empowered to tackle these tasks on your own with confidence!\n\n\n\nDate: September 24, 2025\n\nTime: 11:00–13:00 — lunch break — 14:00–18:00\n\nLocation: Leuphana University Room: C.40.108\n\n\n\n\n\nKnowledge Design\nLearning the Language\nData Preprocessing\nFrom Text to Data\nExploratory Analysis\nLet’s visualise things!\n\n\n\n\nThis workshop requires only very basic tech skills to the extend of having using a computer before. You won’t need to install any software, since everything will run in the cloud.\nThe idea behind this workshop is simple: you don’t need fancy setups or extraordinary tools to start doing fun coding things!\n\n\n\n\n\n\nChecklist\n\n\n\n\nBring your own laptop\n\nHave a Google account ready\n\nUse ChatGPT (free version)\n\nIf you don’t already have an account, you can sign up using Proton Mail, a free, privacy-friendly email service.\n\n\n\n\n\n\n\n\n\nEmail: barbara.romero_ferron(at)leuphana.de"
+    "text": "Welcome to our workshop Coding Provenance for Lab & Friends!\nThink of this as a crash course with a twist: we’ll dive into coding, data cleaning, analysis, and visualization in a fun, hands-on way. By the end of the session, you’ll have shaken off the fear of coding and feel empowered to tackle these tasks on your own with confidence!\n\n\n\nDate: September 24, 2025\n\nTime: 11:00–13:00 — lunch break — 14:00–18:00\n\nLocation: Leuphana University Room: C.40.108\n\n\n\n\n\nKnowledge Design\nLearning the Language\nFrom Text to Data\nData Preprocessing\nExploratory Analysis & Visualisation\n\n\n\n\nThis workshop requires only very basic tech skills to the extend of having using a computer before. You won’t need to install any software, since everything will run in the cloud.\nThe idea behind this workshop is simple: you don’t need fancy setups or extraordinary tools to start doing fun coding things!\n\n\n\n\n\n\nChecklist\n\n\n\n\nBring your own laptop\n\nHave a Google account ready\n\nUse ChatGPT (free version)\n\nIf you don’t already have an account, you can sign up using Proton Mail, a free, privacy-friendly email service.\n\n\n\n\n\n\n\n\n\nEmail: barbara.romero_ferron(at)leuphana.de"
   },
   {
     "objectID": "index.html#date-time",
@@ -18,7 +18,7 @@
     "href": "index.html#content",
     "title": "Coding Provenance. Lab & Friends",
     "section": "",
-    "text": "Knowledge Design\nLearning the Language\nData Preprocessing\nFrom Text to Data\nExploratory Analysis\nLet’s visualise things!"
+    "text": "Knowledge Design\nLearning the Language\nFrom Text to Data\nData Preprocessing\nExploratory Analysis & Visualisation"
   },
   {
     "objectID": "index.html#preparation",
@@ -33,5 +33,33 @@
     "title": "Coding Provenance. Lab & Friends",
     "section": "",
     "text": "Email: barbara.romero_ferron(at)leuphana.de"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "Exploratory Analysis & Visualisation",
+    "section": "",
+    "text": "Basic Statistical Analysis\nIntroduction to Visualisations\nBonus: Network Analysis"
+  },
+  {
+    "objectID": "exploration.html#materials",
+    "href": "exploration.html#materials",
+    "title": "Exploratory Analysis & Visualisation",
+    "section": "Materials",
+    "text": "Materials\nFor this session we will need three datasets (two jsons and one csv). For the second part of this session we also need to download and install gephi.\n\nData\nMOMI All Data Contains information about artworks and their provenance events (e.g., creation, acquisition, sales). Each record links an object to a sequence of events over time.\n\n\n\n\n\n\nData Dictionary\n\n\n\n\n\nMOMI Data Dictionary\n\n\n\n\n\n\n\n\nVariable\nDescription\nExample\n\n\n\n\n_id\nInternal numeric identifier for the record.\n1\n\n\nMOMI_id\nUnique MoMi identifier for the artwork.\nMOMI_2\n\n\ntitle\nTitle of the artwork.\nThe Artist’s Studio, Rue Visconti, Paris (Primary Title)\n\n\nauthor\nCreator/artist, sometimes with external ID (ULAN).\nBazille, Frédéric [ulan:500004356]\n\n\ninstitution\nCurrent holding institution.\nVirginia Museum of Fine Arts\n\n\nurl\nLink to the object’s online record.\nhttps://www.vmfa.museum/...\n\n\ndate\nCreation date or year of the artwork.\n1867\n\n\nplace\nPlace of creation (may be blank).\nParis / ``\n\n\naccessionID\nAccession/catalogue number in the institution.\n83.4\n\n\nprovenance\nFree-text provenance statement.\n\"Collection of André Bazille... Gift to VMFA in 1983.\"\n\n\nnotes\nAdditional curatorial or archival notes.\n\"Sold on February 14, 1961. See VMFA Curatorial file.\"\n\n\ncreditLine\nAcquisition credit line.\n\"Collection of Mr. and Mrs. Paul Mellon\"\n\n\ninscriptions\nInscriptions on the artwork.\n\"Not signed.\"\n\n\nexhibitions\nList of exhibitions where the artwork was shown.\n\"2019: Van Gogh, Monet, Degas...\"\n\n\nbibliography\nReferences and publications.\n\"Tiller, Bertrand. Vues d’atelier. Paris, 2014.\"\n\n\nmedium\nMaterial/technique.\n\"oil on canvas\"\n\n\ndimensions\nPhysical dimensions, framed/unframed.\n\"25 1/2 × 19 in. (64.77 × 48.26 cm)\"\n\n\nimage\nLink to image file.\nhttps://vmfa-dmz-new.piction.com/...\n\n\nWD\nWikidata ID and label.\nQ19962601___The Artist’s Studio...\n\n\nsnapshotDate\nDate of record snapshot.\n2021-10-17\n\n\nstatus\nStatus of the record.\n\"Automatically Acquired\"\n\n\nprovenanceData\nStructured provenance events (nested JSON). Includes:  - activityCertainty  - activityType (Creation, Acquisition, Gift, etc.)  - activityTimeString / activityTimeEDTF  - assertionAuthor  - assertionNotes  - parties (with party ID and role: agent, sender, receiver).\nExample event: \"activityType\": \"aat:300417637__Gift\", \"activityTimeString\": \"May 1983\", \"parties\": [{\"id\": \"...\", \"role\": \"sender\"}]\n\n\nactive\nBoolean flag indicating if the record is active.\n\"true\"\n\n\n\n\n\n\nMOMI Parties Contains information about the parties (collectors, dealers, artists, institutions, etc.) involved in those provenance events, as well as their relationships and roles.\n\n\n\n\n\n\nData Dictionary\n\n\n\n\n\nMOMI Parties Data Dictionary\n\n\n\n\n\n\n\n\nVariable\nDescription\nExample\n\n\n\n\n_id\nInternal unique identifier (string) for the party.\n\"ZuW1191362122\"\n\n\nid\nSame as _id, used as reference key in other files.\n\"ZuW1191362122\"\n\n\nlabel\nDisplay label, usually prefixed with # and the party’s name.\n\"#André Bazille\"\n\n\ntype\nType of party: person, group, institution, etc.\n\"person\", \"group\"\n\n\ngender\nGender of the person (AAT vocabulary).\n\"aat:300411836\" (male), \"aat:300411837\" (female)\n\n\nULAN\nULAN identifier and label if available.\n\"ulan/500304375___Wildenstein and Co., Inc.\"\n\n\nWD\nWikidata identifier and label if available.\n\"Q4013975___Virginia Museum of Fine Arts...\"\n\n\nbirthTimeString\nBirth year or date in human-readable string.\n\"1860\"\n\n\nbirthTimeEDTF\nBirth year/date in EDTF format.\n\"1860\", \"1934-03-27\"\n\n\ndeathTimeString\nDeath year/date in human-readable string.\n\"1922\"\n\n\ndeathTimeEDTF\nDeath year/date in EDTF format.\n\"1922\"\n\n\ngroupTypes\nList of controlled terms describing group type.\n[\"aat:300443854__art dealerships\"]\n\n\nnames\nAlternative or variant names with type and value.\n{\"type\": \"aat:300417226__alternative titles\", \"value\": \"Kunstsalon Schames\"}\n\n\nlocations\nList of associated locations, sometimes with Wikidata links, city, country, province, and an id.\n{\"city\": \"Frankfurt am Main\", \"country\": \"Germany\", \"WD\": \"Q1794...\"}\n\n\nrelations\nList of relationships to other parties: includes relation id, related party id, and relation type (ULAN relation vocab).\n{\"party\": \"iXw1994820523\", \"type\": \"gvp:ulan1541_spouse_of__spouse of\"}\n\n\n\n\n\n\n\n\nPresentation\n\n\nBibliography + Resources\nhttps://datavizproject.com/ http://networksciencebook.com/ https://histecon.fas.harvard.edu/visualizing/ https://cosmograph.app/"
+  },
+  {
+    "objectID": "knowledge.html",
+    "href": "knowledge.html",
+    "title": "Knowledge Design",
+    "section": "",
+    "text": "Structure the Data – define formats and standards.\nBuild Ontologies – establish meaning and relationships.\nInterrogate the Datasets – evaluate biases, gaps, and context."
+  },
+  {
+    "objectID": "knowledge.html#materials",
+    "href": "knowledge.html#materials",
+    "title": "Knowledge Design",
+    "section": "Materials",
+    "text": "Materials\n\nData\nFor the first activity, review these different archival sources and imagine that you need to design a data model for a tabular database (a spreadsheet). What variables/columns would you include?\n- https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=FL4156816 - https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_paul_gauguin_volume_i_wildenstein_institute/page/52-53 - https://www.royalacademy.org.uk/art-artists/exhibition-catalogue/1920-21-exhibition-of-spanish-painting - https://libguides.getty.edu/Stendahl/Letter_3\n\n\nPresentation\n\n\nBibliography\n@book{DignazioKlein2023, author = {Catherine D’Ignazio and Lauren F. Klein}, title = {Data Feminism}, year = {2023}, publisher = {MIT Press}, url = {https://data-feminism.mitpress.mit.edu/} }\n@misc{CARE, title = {CARE Principles for Indigenous Data Governance}, author = {{Global Indigenous Data Alliance}}, year = {2019}, url = {https://www.gida-global.org/care}, note = {Accessed: {{}}} }\n@article{Ricaurte2019, author = {P. Ricaurte}, title = {Data Epistemologies, The Coloniality of Power, and Resistance}, journal = {Television & New Media}, year = {2019}, volume = {20}, number = {4}, pages = {350–365}, doi = {10.1177/1527476419831640} }\n@online{LinkedArt, title = {Linked Art}, year = {n.d.}, url = {https://linked.art/} }\n@online{CIDOCCRM, title = {CIDOC-CRM, Version 7.3}, year = {n.d.}, url = {https://cidoc-crm.org/Version/version-7.3} }"
   }
 ]

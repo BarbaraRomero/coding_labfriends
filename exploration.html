@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploratory Analysis – Coding Provenance. Lab &amp; Friends</title>
+<title>Exploratory Analysis &amp; Visualisation – Coding Provenance. Lab &amp; Friends</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -102,20 +102,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Learning the Language</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./preprocessing.html"> 
-<span class="menu-text">Data Preprocessing</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./text2data.html"> 
 <span class="menu-text">From Text to Data</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./exploration.html" aria-current="page"> 
-<span class="menu-text">Exploratory Analysis</span></a>
+    <a class="nav-link" href="./preprocessing.html"> 
+<span class="menu-text">Data Preprocessing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visualisation.html"> 
-<span class="menu-text">Visualise it!</span></a>
+    <a class="nav-link active" href="./exploration.html" aria-current="page"> 
+<span class="menu-text">Exploratory Analysis &amp; Visualisation</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -137,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
-  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Bibliography</a></li>
+  <li><a href="#bibliography-resources" id="toc-bibliography-resources" class="nav-link" data-scroll-target="#bibliography-resources">Bibliography + Resources</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -147,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exploratory Analysis</h1>
+<h1 class="title">Exploratory Analysis &amp; Visualisation</h1>
 </div>
 
 
@@ -164,16 +160,279 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<ul>
+<li>Basic Statistical Analysis</li>
+<li>Introduction to Visualisations</li>
+<li>Bonus: Network Analysis</li>
+</ul>
 <section id="materials" class="level2">
 <h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<p>For this session we will need three datasets (two jsons and one csv). For the second part of this session we also need to download and install <a href="https://gephi.org/">gephi</a>.</p>
 <section id="data" class="level3">
 <h3 class="anchored" data-anchor-id="data">Data</h3>
+<p><a href="https://drive.google.com/file/d/1ehW7hgnzrWM1yB-V6P83DwkFZ-A8uLq1/view?usp=sharing"><strong>MOMI All Data</strong></a> Contains information about artworks and their provenance events (e.g., creation, acquisition, sales). Each record links an object to a sequence of events over time.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Data Dictionary">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data Dictionary
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<section id="momi-data-dictionary" class="level4 callout-body-container callout-body">
+<h4 class="anchored" data-anchor-id="momi-data-dictionary">MOMI Data Dictionary</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 67%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>_id</strong></td>
+<td>Internal numeric identifier for the record.</td>
+<td><code>1</code></td>
+</tr>
+<tr class="even">
+<td><strong>MOMI_id</strong></td>
+<td>Unique MoMi identifier for the artwork.</td>
+<td><code>MOMI_2</code></td>
+</tr>
+<tr class="odd">
+<td><strong>title</strong></td>
+<td>Title of the artwork.</td>
+<td><em>The Artist’s Studio, Rue Visconti, Paris (Primary Title)</em></td>
+</tr>
+<tr class="even">
+<td><strong>author</strong></td>
+<td>Creator/artist, sometimes with external ID (ULAN).</td>
+<td><code>Bazille, Frédéric [ulan:500004356]</code></td>
+</tr>
+<tr class="odd">
+<td><strong>institution</strong></td>
+<td>Current holding institution.</td>
+<td><code>Virginia Museum of Fine Arts</code></td>
+</tr>
+<tr class="even">
+<td><strong>url</strong></td>
+<td>Link to the object’s online record.</td>
+<td><code>https://www.vmfa.museum/...</code></td>
+</tr>
+<tr class="odd">
+<td><strong>date</strong></td>
+<td>Creation date or year of the artwork.</td>
+<td><code>1867</code></td>
+</tr>
+<tr class="even">
+<td><strong>place</strong></td>
+<td>Place of creation (may be blank).</td>
+<td><code>Paris</code> / ``</td>
+</tr>
+<tr class="odd">
+<td><strong>accessionID</strong></td>
+<td>Accession/catalogue number in the institution.</td>
+<td><code>83.4</code></td>
+</tr>
+<tr class="even">
+<td><strong>provenance</strong></td>
+<td>Free-text provenance statement.</td>
+<td><code>"Collection of André Bazille... Gift to VMFA in 1983."</code></td>
+</tr>
+<tr class="odd">
+<td><strong>notes</strong></td>
+<td>Additional curatorial or archival notes.</td>
+<td><code>"Sold on February 14, 1961. See VMFA Curatorial file."</code></td>
+</tr>
+<tr class="even">
+<td><strong>creditLine</strong></td>
+<td>Acquisition credit line.</td>
+<td><code>"Collection of Mr. and Mrs. Paul Mellon"</code></td>
+</tr>
+<tr class="odd">
+<td><strong>inscriptions</strong></td>
+<td>Inscriptions on the artwork.</td>
+<td><code>"Not signed."</code></td>
+</tr>
+<tr class="even">
+<td><strong>exhibitions</strong></td>
+<td>List of exhibitions where the artwork was shown.</td>
+<td><code>"2019: Van Gogh, Monet, Degas..."</code></td>
+</tr>
+<tr class="odd">
+<td><strong>bibliography</strong></td>
+<td>References and publications.</td>
+<td><code>"Tiller, Bertrand. Vues d’atelier. Paris, 2014."</code></td>
+</tr>
+<tr class="even">
+<td><strong>medium</strong></td>
+<td>Material/technique.</td>
+<td><code>"oil on canvas"</code></td>
+</tr>
+<tr class="odd">
+<td><strong>dimensions</strong></td>
+<td>Physical dimensions, framed/unframed.</td>
+<td><code>"25 1/2 × 19 in. (64.77 × 48.26 cm)"</code></td>
+</tr>
+<tr class="even">
+<td><strong>image</strong></td>
+<td>Link to image file.</td>
+<td><code>https://vmfa-dmz-new.piction.com/...</code></td>
+</tr>
+<tr class="odd">
+<td><strong>WD</strong></td>
+<td>Wikidata ID and label.</td>
+<td><code>Q19962601___The Artist’s Studio...</code></td>
+</tr>
+<tr class="even">
+<td><strong>snapshotDate</strong></td>
+<td>Date of record snapshot.</td>
+<td><code>2021-10-17</code></td>
+</tr>
+<tr class="odd">
+<td><strong>status</strong></td>
+<td>Status of the record.</td>
+<td><code>"Automatically Acquired"</code></td>
+</tr>
+<tr class="even">
+<td><strong>provenanceData</strong></td>
+<td>Structured provenance events (nested JSON). Includes: <br> - <strong>activityCertainty</strong> <br> - <strong>activityType</strong> (Creation, Acquisition, Gift, etc.) <br> - <strong>activityTimeString / activityTimeEDTF</strong> <br> - <strong>assertionAuthor</strong> <br> - <strong>assertionNotes</strong> <br> - <strong>parties</strong> (with party ID and role: agent, sender, receiver).</td>
+<td>Example event: <code>"activityType": "aat:300417637__Gift", "activityTimeString": "May 1983", "parties": [{"id": "...", "role": "sender"}]</code></td>
+</tr>
+<tr class="odd">
+<td><strong>active</strong></td>
+<td>Boolean flag indicating if the record is active.</td>
+<td><code>"true"</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+<p><a href="https://drive.google.com/file/d/10vfrd2ara0nSuynMWSFc2f1Bz1qN12eJ/view?usp=sharing"><strong>MOMI Parties</strong></a> Contains information about the parties (collectors, dealers, artists, institutions, etc.) involved in those provenance events, as well as their relationships and roles.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Data Dictionary">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data Dictionary
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<section id="momi-parties-data-dictionary" class="level4 callout-body-container callout-body">
+<h4 class="anchored" data-anchor-id="momi-parties-data-dictionary">MOMI Parties Data Dictionary</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 56%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>_id</strong></td>
+<td>Internal unique identifier (string) for the party.</td>
+<td><code>"ZuW1191362122"</code></td>
+</tr>
+<tr class="even">
+<td><strong>id</strong></td>
+<td>Same as <code>_id</code>, used as reference key in other files.</td>
+<td><code>"ZuW1191362122"</code></td>
+</tr>
+<tr class="odd">
+<td><strong>label</strong></td>
+<td>Display label, usually prefixed with <code>#</code> and the party’s name.</td>
+<td><code>"#André Bazille"</code></td>
+</tr>
+<tr class="even">
+<td><strong>type</strong></td>
+<td>Type of party: person, group, institution, etc.</td>
+<td><code>"person"</code>, <code>"group"</code></td>
+</tr>
+<tr class="odd">
+<td><strong>gender</strong></td>
+<td>Gender of the person (AAT vocabulary).</td>
+<td><code>"aat:300411836"</code> (male), <code>"aat:300411837"</code> (female)</td>
+</tr>
+<tr class="even">
+<td><strong>ULAN</strong></td>
+<td>ULAN identifier and label if available.</td>
+<td><code>"ulan/500304375___Wildenstein and Co., Inc."</code></td>
+</tr>
+<tr class="odd">
+<td><strong>WD</strong></td>
+<td>Wikidata identifier and label if available.</td>
+<td><code>"Q4013975___Virginia Museum of Fine Arts..."</code></td>
+</tr>
+<tr class="even">
+<td><strong>birthTimeString</strong></td>
+<td>Birth year or date in human-readable string.</td>
+<td><code>"1860"</code></td>
+</tr>
+<tr class="odd">
+<td><strong>birthTimeEDTF</strong></td>
+<td>Birth year/date in EDTF format.</td>
+<td><code>"1860"</code>, <code>"1934-03-27"</code></td>
+</tr>
+<tr class="even">
+<td><strong>deathTimeString</strong></td>
+<td>Death year/date in human-readable string.</td>
+<td><code>"1922"</code></td>
+</tr>
+<tr class="odd">
+<td><strong>deathTimeEDTF</strong></td>
+<td>Death year/date in EDTF format.</td>
+<td><code>"1922"</code></td>
+</tr>
+<tr class="even">
+<td><strong>groupTypes</strong></td>
+<td>List of controlled terms describing group type.</td>
+<td><code>["aat:300443854__art dealerships"]</code></td>
+</tr>
+<tr class="odd">
+<td><strong>names</strong></td>
+<td>Alternative or variant names with type and value.</td>
+<td><code>{"type": "aat:300417226__alternative titles", "value": "Kunstsalon Schames"}</code></td>
+</tr>
+<tr class="even">
+<td><strong>locations</strong></td>
+<td>List of associated locations, sometimes with Wikidata links, city, country, province, and an <code>id</code>.</td>
+<td><code>{"city": "Frankfurt am Main", "country": "Germany", "WD": "Q1794..."}</code></td>
+</tr>
+<tr class="odd">
+<td><strong>relations</strong></td>
+<td>List of relationships to other parties: includes relation <code>id</code>, related party <code>id</code>, and relation type (ULAN relation vocab).</td>
+<td><code>{"party": "iXw1994820523", "type": "gvp:ulan1541_spouse_of__spouse of"}</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
 </section>
 <section id="presentation" class="level3">
 <h3 class="anchored" data-anchor-id="presentation">Presentation</h3>
 </section>
-<section id="bibliography" class="level3">
-<h3 class="anchored" data-anchor-id="bibliography">Bibliography</h3>
+<section id="bibliography-resources" class="level3">
+<h3 class="anchored" data-anchor-id="bibliography-resources">Bibliography + Resources</h3>
+<p><a href="https://datavizproject.com/" class="uri">https://datavizproject.com/</a> http://networksciencebook.com/ https://histecon.fas.harvard.edu/visualizing/ https://cosmograph.app/</p>
 
 
 </section>
